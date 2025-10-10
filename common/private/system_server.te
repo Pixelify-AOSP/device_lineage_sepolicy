@@ -29,3 +29,6 @@ add_service(system_server, refresh_rate_manager_service);
 # Boost framework
 add_service(system_server, boost_framework_service);
 
+# Webview
+allow system_server webview_zygote:process setsched;
+allow system_server app_zygote:process setsched;
