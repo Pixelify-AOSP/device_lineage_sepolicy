@@ -4,6 +4,8 @@ allow system_server adbroot_service:service_manager find;
 allow system_server sysfs_devices_system_cpu:file write;
 allow system_server device:dir write;
 
+allow system_server shell:unix_stream_socket getopt;
+
 add_service(system_server, app_lock_service);
 
 # Use HALs
