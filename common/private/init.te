@@ -1,2 +1,4 @@
 allow init sysfs_devices_system_cpu:file rw_file_perms;
 allow init sysfs_transparent_hugepage:file rw_file_perms;
+allow init adb_data_file:dir rw_dir_perms;
+allow init adb_data_file:file rw_file_perms;
