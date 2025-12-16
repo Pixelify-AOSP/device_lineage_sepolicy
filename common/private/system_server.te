@@ -6,6 +6,10 @@ allow system_server device:dir write;
 
 allow system_server shell:unix_stream_socket getopt;
 
+allow system_server audioserver_tmpfs:file write;
+
+allow system_server vndbinder_device:chr_file write;
+
 add_service(system_server, app_lock_service);
 
 # Use HALs
