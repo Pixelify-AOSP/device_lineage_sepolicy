@@ -35,3 +35,7 @@ allow system_server app_zygote:process setsched;
 
 # Game space
 add_service(system_server, game_space_service);
+
+# Sandbox
+allow system_server ax_sandbox_vault_file:dir create_dir_perms;
+allow system_server ax_sandbox_vault_file:file create_file_perms;
