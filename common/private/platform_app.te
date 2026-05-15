@@ -35,3 +35,6 @@ allow platform_app ax_sandbox_vault_file:dir create_dir_perms;
 allow platform_app ax_sandbox_vault_file:file create_file_perms;
 allow platform_app system_data_file:dir search;
 allow platform_app system_userdir_file:dir search;
+
+# PowerInsight
+allow platform_app power_insight_service:service_manager find;
